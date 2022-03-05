@@ -1,0 +1,70 @@
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+@keyframes AnimForm {
+  0% {
+    box-shadow: 5px 5px 20px 0 #cab8ff, -5px -5px 20px 0 #79b4b7;
+  }
+  25% {
+    box-shadow: 5px -5px 20px 0 #cab8ff, -5px 5px 20px 0 #79b4b7;
+  }
+  50% {
+    box-shadow: -5px -5px 20px 0 #cab8ff, 5px 5px 20px 0 #79b4b7;
+  }
+  75% {
+    box-shadow: -5px 5px 20px 0 #cab8ff, 5px -5px 20px 0 #79b4b7;
+  }
+  100% {
+    box-shadow: 5px 5px 20px 0 #cab8ff, -5px -5px 20px 0 #79b4b7;
+  }
+}
+.CustomSignIn_form {
+  display: flex;
+  padding: 100px;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #ff8aae;
+  border-radius: 40px;
+  border: 5px solid #555555;
+  transition: all .3s ease-in-out;
+  animation: AnimForm 2s infinite;
+}
+.CustomSignIn_form input {
+  background-color: #9adcff;
+  padding: 20px;
+  color: whitesmoke;
+  font-size: 30px;
+  border: none;
+  border-radius: 0 100px 100px 0;
+}
+.CustomSignIn_form input::placeholder {
+  color: #555555;
+}
+
+.CustomSignIn_form input:focus {
+  outline: 10px solid #fff89a;
+}
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnContainer button {
+  padding: 20px;
+  background-color: #c1ffd7;
+  border: 10px solid #cab8ff;
+  font-size: 30px;
+  cursor: pointer;
+  color: #79b4b7;
+}
+.btnContainer button:active {
+  border: 10px solid #ff7878;
+}
+
+.btnContainer button:focus {
+  outline: 10px solid #fff89a;
+}
